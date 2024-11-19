@@ -1,0 +1,89 @@
+---
+import Features from '~/components/widgets/Features.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'About the project',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="About the project"
+    title="DIGI-Teens"
+    subtitle="Improving Digital Wellbeing with and for Teens"
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Start Date', amount: '10/2023' },
+      { title: 'Years', amount: '2' },
+    ]}
+  />
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="key-points"
+    tagline="Key Concepts"
+    title="Fundamentals"
+    subtitle="The project builds on six concepts that are the cornerstones of the research."
+    items={[
+      {
+        title: 'Teachers and Students',
+        description:
+          'Both teachers and students are involved in the project, bringing their perspectives and experiences into the development of the platform.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Participatory Design',
+        description:
+          'The project adopts participatory design methods to involve both teachers and students in the various stages of the creation.',
+        icon: 'tabler:messages',
+      },
+      {
+        title: 'Prototyping',
+        description:
+          'Quick iterations and evaluations of the platform allow for the identification of potential issues and the inclusion of improvements.',
+        icon: 'tabler:view-360-arrow',
+      },
+      {
+        title: 'Personalization',
+        description:
+          'Through the creation of custom-tailored learning paths, teachers can adapt the learning experience to the specific characteristics of their students.',
+        icon: 'tabler:cut',
+      },
+      {
+        title: 'Gamification',
+        description:
+          'At the heart of the project is the use of gamification to engage students in learning about digital wellbeing.',
+        icon: 'tabler:device-gamepad-2',
+      },
+      {
+        title: 'Research Communities',
+        description:
+          "Community-based discussion, involving researchers on digital wellbeing and education, provides important lens as inputs and feedback on intermediate results.",
+        icon: 'tabler:users',
+      },
+    ]}
+  />
+
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText>
+    <Fragment slot="content">
+      <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl">Description</h2>
+      <p class="text-left mt-4">Researchers have recently focused on unexpected problems resulting from excessive and frequent use of personal devices, such as smartphones, and online services and applications. These problems gave rise to a new kind of psychological <span class="font-semibold">digital wellbeing</span>, investigated from different fields such as Human-Computer Interaction (HCI) and psychology. As a result, we now have technological solutions that help users self-regulate their technology use with interventions like timers and lockout mechanisms.</p>
+      <p class="text-left mt-0.5">However, previous works highlight that achieving digital wellbeing is a path of personal growth that requires education more than self-monitoring strategies. This project aims to design, implement, and evaluate a novel web-based gamification platform for teaching digital wellbeing at school or as a part of other educational programs. The generalizability of such a platform is crucial so that it can be used in different situations and for different purposes. Teachers and educators can use the platform to establish <span class="font-semibold">personalized learning paths</span> for teenagers through End-User Development (EUD) techniques. In addition, the learning paths will adapt to different devices and to the context where teachers and educators envision the educational path. In the context of a high school class, for example, a teacher could set up a gamified learning path that, through a mobile application, will empower students to collaboratively learn how to use their smartphones more consciously and give more space to interpersonal relationships.</p>
+      <p class="text-left mt-0.5">The theoretical investigation will be grounded in the challenging empirical goal to derive guidelines, requirements, and best practices for designing a common digital platform based on gamification for supporting teachers and educators in promoting digital wellbeing to teenagers. Throughout the project, we will employ co-design techniques to elicit both requirements and the actual needs, values, and practices of all the involved stakeholders, i.e., teachers, educators, and teenagers. To this end, we plan to involve Italian high schools and associations working with teenagers in the project.</p>
+      <p class="text-left mt-0.5">The work plan is based on parallel experimentations, partially independent of each other, to reduce dependability and maximize velocity while using shared measures and tools to reflect on the experience and feed the shared documents of requirements, guidelines, and best practices. We will adopt rapid prototyping and multiple rounds of design ideas evaluations. At the same time, long-term research will be aligned within the research communities relevant to the project. In this respect, the project will combine an experiment-driven approach with a community-based discussion by involving researchers in the fields of HCI in workshops and symposia. Similarly, the communities of practitioners will be involved to discuss the ideas and champion the results.</p>
+    </Fragment>
+  </HeroText>
+
+</Layout>

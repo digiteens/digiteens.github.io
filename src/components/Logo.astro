@@ -1,9 +1,14 @@
 ---
 import { SITE } from 'astrowind:config';
+// import the Image component and the image
+import { Image } from 'astro:assets';
+import logo from '../assets/images/logo.png'; // Image is 640x640
+import logoDark from '../assets/images/logoDark.png';
 ---
 
 <span
   class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
 >
-  🚀 {SITE?.name}
+  <Image src={logo} alt="DIGI-Teens Logo" width="40" class="max-h-12 inline align-bottom dark:hidden" />
+  <Image src={logoDark} alt="DIGI-Teens Logo" width="40" class="max-h-12 hidden align-bottom dark:inline" /> {SITE?.name}
 </span>
