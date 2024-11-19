@@ -14,16 +14,10 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="About us"
-  >
-    <Fragment slot="title">
-      The Team
-    </Fragment>
+  <Hero tagline="About us">
+    <Fragment slot="title"> The Team </Fragment>
 
-    <Fragment slot="subtitle">
-      Discover the two Italian universities part of the DIGI-Teens project.
-    </Fragment>
+    <Fragment slot="subtitle"> Discover the two Italian universities part of the DIGI-Teens project. </Fragment>
   </Hero>
 
   <!-- Content Widget **************** -->
@@ -35,17 +29,16 @@ const metadata = {
       {
         title: 'Description',
         description:
-          'Politecnico di Torino is a public research university in Turin, Italy. Established in 1859, it is Italy\'s oldest technical university. The university offers undergraduate, graduate, and postgraduate programs in engineering, architecture, and industrial design.',
+          "Politecnico di Torino is a public research university in Turin, Italy. Established in 1859, it is Italy's oldest technical university. The university offers undergraduate, graduate, and postgraduate programs in engineering, architecture, and industrial design.",
       },
       {
         title: 'Role',
         description:
-          'Participate with the e-Lite group of the Department of Control and Computer Engineering (DAUIN). The project\'s Principal Investigator is prof. Luigi De Russis.',
+          "Participate with the e-Lite group of the Department of Control and Computer Engineering (DAUIN). The project's Principal Investigator is prof. Luigi De Russis.",
       },
       {
         title: 'Expertise',
-        description:
-          'Bring expertise in End-User Development, Mobile and Web-based Systems, and Digital Wellbeing.',
+        description: 'Bring expertise in End-User Development, Mobile and Web-based Systems, and Digital Wellbeing.',
       },
     ]}
     image={{
@@ -58,19 +51,16 @@ const metadata = {
       alt: 'Logo Politecnico di Torino',
       height: 218,
     }}
-    
     callToAction={{
       target: '_blank',
-      text: 'Visit Politecnico\'s website',
+      text: "Visit Politecnico's website",
       icon: 'tabler:chevron-right',
       href: 'https://www.polito.it/en',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Politecnico di Torino</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Politecnico di Torino</h3>
     </Fragment>
-
   </Content>
 
   <!-- Content Widget **************** -->
@@ -86,7 +76,8 @@ const metadata = {
       },
       {
         title: 'Role:',
-        description: 'Participate with the Department of Computer Science and Engineering (DISI). The project\'s co-Principal Investigator is prof. Catia Prandi.',
+        description:
+          "Participate with the Department of Computer Science and Engineering (DISI). The project's co-Principal Investigator is prof. Catia Prandi.",
       },
       {
         title: 'Expertise',
@@ -110,10 +101,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Università di Bologna</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Università di Bologna</h3>
     </Fragment>
-
   </Content>
-
 </Layout>

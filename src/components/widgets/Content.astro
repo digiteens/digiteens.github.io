@@ -76,15 +76,15 @@ const {
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
-              <Image
-                class="mx-auto w-full rounded-lg"
-                width={500}
-                height={500}
-                widths={[400, 768]}
-                sizes="(max-width: 768px) 100vw, 432px"
-                layout="responsive"
-                {...image}
-              />
+                <Image
+                  class="mx-auto w-full rounded-lg"
+                  width={500}
+                  height={500}
+                  widths={[400, 768]}
+                  sizes="(max-width: 768px) 100vw, 432px"
+                  layout="responsive"
+                  {...image}
+                />
               )}
             </div>
           )
@@ -95,15 +95,15 @@ const {
               {typeof imageDark === 'string' ? (
                 <Fragment set:html={imageDark} />
               ) : (
-              <Image
-                class="mx-auto w-full rounded-lg"
-                width={500}
-                height={500}
-                widths={[400, 768]}
-                sizes="(max-width: 768px) 100vw, 432px"
-                layout="responsive"
-                {...imageDark}
-              />
+                <Image
+                  class="mx-auto w-full rounded-lg"
+                  width={500}
+                  height={500}
+                  widths={[400, 768]}
+                  sizes="(max-width: 768px) 100vw, 432px"
+                  layout="responsive"
+                  {...imageDark}
+                />
               )}
             </div>
           )
