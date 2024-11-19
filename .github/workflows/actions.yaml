@@ -1,4 +1,4 @@
-name: GitHub Actions
+name: Build and Check
 
 on:
   pull_request:
