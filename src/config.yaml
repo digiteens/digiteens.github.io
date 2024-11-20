@@ -9,13 +9,17 @@ site:
 metadata:
   title:
     default: DIGI-Teens
-    template: '%s — AstroWind'
   description: "\U0001F680 Improving digital wellbeing with and for teens: a gamified and personalized intelligent system. A project funded within the PRIN 2022 program."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: DIGI-Teens
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
 
 i18n:
   language: en
