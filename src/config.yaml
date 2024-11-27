@@ -1,6 +1,6 @@
 site:
   name: DIGI-Teens
-  site: 'https://digiteens.github.io'
+  site: 'https://digiteens.polito.it'
   trailingSlash: false
 
   googleSiteVerificationId: null
