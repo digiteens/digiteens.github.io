@@ -4,6 +4,12 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
+import deliverable1 from '~/assets/pdf/DIGI-Teens_Deliverable_1.1.1.pdf';
+import deliverable2 from '~/assets/pdf/DIGI-Teens_Deliverable_1.2.1.pdf';
+import deliverable3 from '~/assets/pdf/DIGI-Teens_Deliverable_2.2.1.pdf';
+import deliverable4 from '~/assets/pdf/DIGI-Teens_Deliverable_3.1.1.pdf';
+import deliverable5 from '~/assets/pdf/DIGI-Teens_Deliverable_3.2.1.pdf';
+
 const metadata = {
   title: 'DIGI-Teens: Info',
 };
@@ -117,4 +123,40 @@ const metadata = {
       </p>
     </Fragment>
   </HeroText>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="deliverables"
+    tagline="Documents"
+    title="Deliverables"
+    subtitle="Check the deliverables produced within the project."
+    items={[
+      {
+        title: 'Deliverable 1.1.1',
+        description: `<a class="text-primary cursor-pointer" href="${deliverable1}">Needs and Requirements</a>.`,
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'Deliverable 1.2.1 ',
+        description: `<a class="text-primary cursor-pointer" href="${deliverable2}">Paradigms for a Gamified Learning Path</a>.`,
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'Deliverable 2.2.1 and 2.3.1',
+        description: `<a class="text-primary cursor-pointer" href="${deliverable3}">Proof-of-Concept Implementation</a>.`,
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'Deliverable 3.1.1',
+        description: `<a class="text-primary cursor-pointer" href="${deliverable4}">Formative Evaluation of the Proof of Concept</a>.`,
+        icon: 'tabler:file-description',
+      },
+      {
+        title: 'Deliverable 3.2.1',
+        description: `<a class="text-primary cursor-pointer" href="${deliverable5}">Summative Evaluation of the Proof of Concept</a>.`,
+        icon: 'tabler:file-description',
+      },
+    ]}
+  />
 </Layout>
